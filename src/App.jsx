@@ -25,12 +25,12 @@ export const availableIngredients = [
 const App = () => {
   const [stack, setStack] = useState([]);
 
-  // Add an ingredient to the burger stack
+
   const addToBurger = (ingredient) => {
     setStack((prevStack) => [...prevStack, ingredient]);
   };
 
-  // Remove an ingredient from the burger stack
+ 
   const removeFromBurger = (index) => {
     setStack((prevStack) => prevStack.filter((_, i) => i !== index));
   };
